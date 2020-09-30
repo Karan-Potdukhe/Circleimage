@@ -1,0 +1,4 @@
+xml for circular shape with border-color.
+You have to create the cicular_bordershape. 
+xml under the drawable folder.
+It will set the border color for the ImageView.
