@@ -1,0 +1,28 @@
+import android.support.v7.app.AppCompatActivity; 
+import android.graphics.drawable.ColorDrawable; 
+import java.io.IOException; 
+  
+public class MainActivity extends AppCompatActivity { 
+  
+    ImageView imageView; 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) 
+    { 
+        super.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_main); 
+  
+        ActionBar actionBar; 
+        actionBar = getSupportActionBar(); 
+        ColorDrawable colorDrawable 
+            = new ColorDrawable( 
+                Color.parseColor("#0F9D58")); 
+        actionBar.setBackgroundDrawable(colorDrawable); 
+  
+        Toast.makeText( 
+                 MainActivity.this, 
+                 "Circular Image View "
+                     + "without using any library", 
+                 Toast.LENGTH_LONG) 
+            .show(); 
+    } 
+} 
